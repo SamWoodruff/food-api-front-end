@@ -1,0 +1,14 @@
+.listImage{
+    height: 100px;
+    width: auto;
+}
+body {
+    padding-left:10px;
+}
+#whole-menu-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
