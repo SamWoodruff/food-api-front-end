@@ -46,11 +46,13 @@ a:visited {
 .link {
     margin: 50px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .btn {
     display: flex;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .item-info-cont {
@@ -72,6 +74,12 @@ a:visited {
 .title {
     font-size: 15px;
     font-weight: bold;
+}
+
+.title1 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;   
 }
 
 .title2 {
@@ -102,4 +110,46 @@ a:visited {
 
 .total-cost {
     margin: 15px 0px;
+}
+
+.login-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    margin: 50px;
+}
+
+.login {
+    margin: 20px;
+    font-weight: bold;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 10px;
+    width: 50px;
+    font-weight: bold;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-column {
+    margin: 0px 100px;
+}
+
+.order-cont {
+    margin: 50px;
+    text-align: center;
+}
+
+.whole-order-history-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

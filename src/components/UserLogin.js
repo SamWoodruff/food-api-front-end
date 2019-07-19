@@ -13,15 +13,19 @@ const UserLogin = ({ updateCurrentUser }) => {
         verifyEmail("");
         verifyPassword("");
     }
-        return(
-         <div>
+    return(
+         <div className="login-cont">
+            <div className="login">
                 Email:
                 <input value={email} onChange={(e)=>verifyEmail(e.target.value)} type="text"/>
+            </div>
+            <div className="login">
                 Password:
                 <input value={password} onChange={(e)=>verifyPassword(e.target.value)} type="password"/>
-                <button onClick={()=>getUser()}>Login</button>
             </div>
-        );
+                <button className="btn1" onClick={()=>getUser()}>Login</button>
+        </div>
+    );
 }
 
 const mapDispatchToProps = dispatch =>({

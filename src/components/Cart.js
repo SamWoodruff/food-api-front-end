@@ -9,7 +9,7 @@ const Cart = ({cart, user, clearCart}) => {
     cart.forEach(item => {
         total+=item.price;
         item.toppings.forEach(topping => {
-            total+=topping.cost;
+            total+=topping.cost * topping.quantity;
         })
     });
     

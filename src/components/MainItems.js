@@ -5,26 +5,24 @@ import * as actions from '../config/actions';
 
 
 const MainItems = ({ newCurrentItem }) => {
-        return(
-            <div>
-                <div className="title2">
-                    Pick Your Flavor
-                </div>
-                {mainItems.map(item =>(
-                    <div className="item-info-cont">
-                        <img className="listImage" src={item.image} alt ="ice cream flavor" />
-                        <div className="icecream-info-cont">
-                            {item.name}<br/>
-                            ${item.price.toFixed(2)}<br/>
-                        </div>
-                        <button className="btn" onClick={()=>newCurrentItem(item)}>Add</button>
-                    </div>
-                ))}
+    return(
+        <div>
+            <div className="title2">
+                Pick Your Flavor
             </div>
-        );
+            {mainItems.map(item =>(
+                <div className="item-info-cont">
+                    <img className="listImage" src={item.image} alt ="ice cream flavor" />
+                    <div className="icecream-info-cont">
+                        {item.name}<br/>
+                        ${item.price.toFixed(2)}<br/>
+                    </div>
+                    <button className="btn" onClick={()=>newCurrentItem(item)}>Add</button>
+                </div>
+            ))}
+        </div>
+    );
 }
-
-
 
 const mapStateToProps = ({ cart }) =>({
     cart

@@ -20,7 +20,7 @@ const Toppings = ({ updateCurrentItem, addToppingToItem, currentItem }) => {
     }
   };
   return (
-    <div>
+    <div className="menu-column">
       <div className="title2">
         Pick Your Toppings
       </div>

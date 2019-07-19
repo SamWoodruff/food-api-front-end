@@ -6,7 +6,7 @@ import CurrentItem from './CurrentItem'
 
 const HomePage = () =>{
     return(
-        <div>
+      <div className="menu-column">
         <h1>
             The Ice Cream Shop
         </h1>

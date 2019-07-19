@@ -13,18 +13,17 @@ const OrderHistory = ({ user, updateUserOrderHistory }) => {
     }
     console.log(userOrders, "here");
     return (
-        <div>
-            Order Page
+        <div className="whole-order-history-cont">
+            <div className="title1">
+                Order Page
+            </div>
             {userOrders.length > 0 &&
                 userOrders.map(order => order.items.map(item =>
-                    <div>
-                        {item.quantity}
+                    <div className="order-cont">
                         {item.name}
-                        {item.price}
                         {item.toppings.map(topping => (
                             <div>
                                 {topping.name}
-                                {topping.price}
                             </div>
                         ))}
                     </div>
