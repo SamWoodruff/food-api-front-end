@@ -22,25 +22,25 @@ const Cart = ({cart, user, clearCart}) => {
         }
     }
         return(
-            <div>
-                Cart
+            <div className="current-item-cont">
+                <span className="title">Cart</span>
                 {cart.map((order,i)=>(
-                    <div>
-                        {i + 1}<br/>
+                    <div className="current-item-info">
+                        <span className="order-num">{i + 1}</span><br/>
                         {order.name}
                         {order.price.toFixed(2)}
                         {order.toppings.map(topping=>(
-                            <div>
+                            <div className="current-item-info">
                                 {topping.name}
                                 {topping.cost.toFixed(2)}
                             </div>
                         ))}
                     </div>
                 ))}
-                <div>
+                <div className="total-cost">
                     ${total.toFixed(2)}
                 </div>
-                <button onClick={()=>handleCheckout()}>Checkout</button>
+                <button className="btn" onClick={()=>handleCheckout()}>Checkout</button>
             </div>
         );
 }

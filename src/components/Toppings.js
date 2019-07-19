@@ -21,14 +21,19 @@ const Toppings = ({ updateCurrentItem, addToppingToItem, currentItem }) => {
   };
   return (
     <div>
+      <div className="title2">
+        Pick Your Toppings
+      </div>
       {toppings.map(topping => (
-        <div>
+        <div className="item-info-cont">
           <img className="listImage" src={topping.image} alt="topping pic" />
+          <div className="icecream-info-cont">
           {topping.name}
           <br />
-          {topping.cost.toFixed(2)}
+          ${topping.cost.toFixed(2)}
           <br />
-          <button onClick={() => handleOnClick(topping)}>Add</button>
+          </div>
+          <button className="btn" onClick={() => handleOnClick(topping)}>Add</button>
         </div>
       ))}
     </div>

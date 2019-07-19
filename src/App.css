@@ -1,10 +1,20 @@
 .listImage{
     height: 100px;
     width: auto;
+    display: flex;
+    justify-self: center;
 }
 body {
     padding-left:10px;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; 
+    font-size: 50px;
+}
+
 #whole-menu-cont {
     display: flex;
     flex-direction: row;
@@ -12,3 +22,84 @@ body {
     align-self: center;
 }
 
+#nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+a:link {
+     color: #4287f5;
+     text-decoration: none;
+}
+
+a:visited {
+    color: #4287f5;
+    text-decoration: none;
+}
+
+.link {
+    margin: 50px;
+    font-size: 20px;
+}
+
+.btn {
+    display: flex;
+    margin-top: 10px;
+}
+
+.item-info-cont {
+    margin: 30px;
+}
+
+.icecream-info-cont {
+    line-height: 1.5em;
+}
+
+.current-item-cont {
+    margin: 30px;
+}
+
+.current-item-info {
+   margin: 10px 0px; 
+}
+
+.title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.title2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 0px 0px 30px;
+}
+
+.checkout-area {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #d1e3ff;
+    height: 600px;
+}
+
+.checkout-column-1 {
+    margin: 0px 100px 0px 70px;
+}
+
+.checkout-column-2 {
+    margin: 0px 70px 0px 100px;
+}
+
+.order-num {
+    font-weight: bold;
+}
+
+.total-cost {
+    margin: 15px 0px;
+}

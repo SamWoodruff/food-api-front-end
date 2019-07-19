@@ -3,6 +3,8 @@ import chocolate from "../images/chocolate.png";
 import strawberry from "../images/strawberry.png";
 import cookiedough from "../images/cookiedough.png";
 import mintchip from "../images/mintchip.png";
+import cottoncandy from "../images/cottoncandy.png";
+import berry from "../images/berry.png";
 import fruit from "../images/fruit.png";
 import chocolatechips from "../images/chocolatechips.png";
 import hotfudge from "../images/hotfudge.png";
@@ -41,6 +43,18 @@ export const mainItems = [
         name: "Mint Chip Ice Cream",
         price: 2.00,
         image: mintchip
+    },
+    {
+        id: 6,
+        name: "Cotton Candy Ice Cream",
+        price: 2.10,
+        image: cottoncandy,
+    },
+    {
+        id: 7,
+        name: "Mixed Berry Ice Cream",
+        price: 2.50,
+        image: berry, 
     }
 ];
 

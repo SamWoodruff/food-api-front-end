@@ -7,12 +7,17 @@ import * as actions from '../config/actions';
 const MainItems = ({ newCurrentItem }) => {
         return(
             <div>
+                <div className="title2">
+                    Pick Your Flavor
+                </div>
                 {mainItems.map(item =>(
-                    <div>
+                    <div className="item-info-cont">
                         <img className="listImage" src={item.image} alt ="ice cream flavor" />
-                        {item.name}<br/>
-                        {item.price.toFixed(2)}<br/>
-                        <button onClick={()=>newCurrentItem(item)}>Add</button>
+                        <div className="icecream-info-cont">
+                            {item.name}<br/>
+                            ${item.price.toFixed(2)}<br/>
+                        </div>
+                        <button className="btn" onClick={()=>newCurrentItem(item)}>Add</button>
                     </div>
                 ))}
             </div>

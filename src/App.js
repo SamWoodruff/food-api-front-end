@@ -11,18 +11,18 @@ const App = () =>{
   return (
     <Router>
       <div>
-        <nav className="#00bcd4 cyan">
+        <nav id="nav-bar" className="#00bcd4 cyan">
           <ul>
-            <li>
+            <li className="link">
               <Link to="/UserLogin">Login</Link>
             </li>
-            <li>
+            <li className="link">
               <Link to="/Registration">Registration</Link>
             </li>
-            <li>
+            <li className="link">
               <Link to="/">HomePage</Link>
             </li>
-            <li>
+            <li className="link">
               <Link to="/OrderHistory">Order History</Link>
             </li>
           </ul>

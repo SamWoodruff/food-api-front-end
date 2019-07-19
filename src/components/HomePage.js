@@ -8,22 +8,23 @@ const HomePage = () =>{
     return(
         <div>
         <h1>
-            I Sea Ice Cream
+            The Ice Cream Shop
         </h1>
       <div id="whole-menu-cont">
-        <div id="main-item-cont">
+        <div>
           <MainItems />
         </div>
-        <div id="topping-cont">
+        <div>
           <Toppings />
         </div>
-        <div>
-          <CurrentItem />
+        <div className="checkout-area">
+          <div className="checkout-column-1">
+            <CurrentItem />
+          </div>
+          <div className="checkout-column-2">
+            <Cart />
+          </div>
         </div>
-        <div id="cart-cont">
-          <Cart />
-        </div>
-      
         </div>
         </div>
     );
